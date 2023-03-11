@@ -1,0 +1,78 @@
+/*◀문제내용▶
+◀다른사람들이풀이▶ 
+◀어려 웠던 점▶  */
+
+const num = Math.floor(Math.random() * 10);
+console.log("넘겨줄 번호 : " + num);
+
+console.log(
+
+
+◇ ◆
+◇.splice()
+형식 : 배열.splice(시작위치,삭제 갯수,삽입할 값); 
+배열에서 지정된 위치에서 삭제를 하며 삽입할 값을 넣어준다 
+ex) 	z = [a,b,c,d,e]
+	z.splice(2, 0, "7")
+	z.splice(2)
+out)   a,b,7,c,d,e
+	a,b		
+◇.split() 
+형식 : 문자열.(구분할 값)
+문자열 중 구분할값을 비교해서 잘라내는 형식
+
+◇.indexOf
+형식 : 문자열.indexOf(구분할 값,시작위치_생략가능) 
+문자열중 구분할값 위치를 찾아주는 함수 
+ex)  	z = "abab";
+	str.indexOf('a')
+     	str.indexOf('ba')
+    	str.indexOf('AB') // -1
+out)	0
+ 	1
+	-1
+
+◇ .repeat
+형식 : 문자.repeat(값) 
+문자를 값만큼 반복함
+ex) console.log("Z".repeat(4));
+out) ZZZZ
+
+
+◇.substr
+형식 : substr("시작 위치", "길이") 
+문자열을 지정한 위치에서 길이만큼 자른다
+ex)   let str = 'ABCDEF';
+      console.log(str.substring(2, 4);
+out) CD
+
+◆Number()
+형식: number(값) 
+문자를 숫자로 변환한다.
+
+◆Date 
+형식: Date(年, 月, 日)  
+지정된 날짜의 정보를 가져온다
+◇.getday()
+날짜정보만 가져온다
+
+◆Math 
+◇.floor  내림
+◇.round 반올림
+◇.ceil  올림 
+◇.abs  절대값
+◇..apply 배열 계산 가능
+형식 : Math.ceil(값) 
+	Math.abs.apply(배열 쪽에서 절대값 찾기)	
+값을 올림
+ex)   let 값= '122.222'
+	console.log(Math.ceil(값))
+	console.log(Math.ceil(값/10) * 10)
+	Math.abs(true)
+	Math.abs(null)
+	Math.abs(undefined)
+out) 122
+      130 
+      1
+      0
+      NaN

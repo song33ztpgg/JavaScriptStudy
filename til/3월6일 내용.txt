@@ -1,0 +1,67 @@
+ SQL : 생성, 삽입, 조회 명령문을 SQL(Structured Query Language)이라고 합니다. 
+
+//데이터 베이스 NodeJS생성
+CREATE DATABASE NodeJS; 
+//테이블 "이름" 조회 
+SELECT * FROM 이름 ;
+
+//테이블 "이름" 생성
+CREATE TABLE IF NOT EXISTS 이름(
+    id bigint(5) NOT NULL AUTO_INCREMENT, 
+    title varchar(255) NOT NULL,
+    tutor varchar(255) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+
+INSERT INTO courses (title, tutor) VALUES
+    ('Spring 기초반', '최원빈'),
+    ('Spring 숙련반', '최원빈'),
+    ('React 기초반', '김예지'),
+    ('React 숙련반', '김예지'),
+    ('Node.js 기초반', '이용우'),
+    ('Node.js 숙련반', '이용우'),
+    ('웹개발 종합반', '이범규'),
+    ('웹개발 종합반 플러스', '이범규');
+
+
+//특정 조회
+SELECT * FROM courses WHERE tutor='이용우';
+
+ FOREIGN KEY (컬럼명) REFERENCES 참조_테이블명 (참조_컬럼명)
+
+CREATE TABLE Garden
+(
+    gardenId int(11)      NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    address  varchar(255) NOT NULL
+);
+
+CREATE TABLE GardenPlants
+(
+    gardenPlantsId int(11)      NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    GardenId       int(11)      NOT NULL,
+    name           varchar(255) NOT NULL,
+ 특정키만든다	 내부의 GardenId를    	 여기를 참조한다	테이블 Garden의	gardenId컬럼을
+ FOREIGN KEY  	(GardenId) 			REFERENCES 		Garden		 (gardenId)
+);
+////////////////////////////////////////////////////////////////////////// 
+시퀄라이즈 
+migration = mysql 생성 삭제
+model  = 스키마,테이블과 컴럼 값 입력하여 mysql expresss 연결 시켜주는 역할 
+
+// 이름에 해당되는 시퀄라이즈를 참고해서 테이블을 생성하겠다
+npx sequelize db:이름
+
+
+Sequelize의 Migration은 MySQL의 테이블을 정의 및 생성하기 위해 사용됩니다.
+
+
+# 가장 최근에 실행한 db:migrate를 취소합니다
+npx sequelize db:migrate:undo
+
+# migrations 폴더에 존재하는 migration 파일을 기반으로 테이블을 생성합니다.
+npx sequelize db:migrate
+
+
+
+

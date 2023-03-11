@@ -1,0 +1,14 @@
+몽고 db에서 id이름을 수정하면 테이블을 삭제해도 오류가 발생 
+
+ corss env
+rdbm 
+orm 기술 
+node = sequalize 
+mongo = mongus 
+spring = jpa
+
+ rdbms 관계
+
+ pk를 가지면서 연관관계를 가져서 
+테이블1		테이블2
+pk			pk			

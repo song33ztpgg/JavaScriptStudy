@@ -1,0 +1,36 @@
+
+1. /[^0-9]/g : 0~9까지의 숫자(=모든숫자)
+
+2. /[^0-9]/g : ^뒤에 나오는 패턴을 부정
+
+3. /[^0-9]/g : [ ](대괄호) 안의 패턴을 매칭
+
+4. /[^0-9]/g : 매칭된 패턴에 대한 전체 검색
+
+ 
+Date 함수(원하는 연도, 원하는 월, 원하는 일자).getDay( ) 
+getDay => 요일을 숫자로 표현
+
+
+toLowerCase => 전부 대문자 | 소문자로 변환한다
+
+알고 싶은것 =================
+
+
+s = ["pPoooyY"] 
+
+s[1] ==
+
+
+
+
+const str = "Hello_123_World_456_!!!";
+const regex = /[^0-9]/g;
+const result = str.replace(regex, "");
+const number = parseInt(result);
+
+console.log(result);
+console.log(typeof(result));
+
+console.log(number);
+console.log(typeof(number));

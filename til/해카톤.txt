@@ -1,0 +1,54 @@
+모달  : 다른데 누르지 못하도록 하는것 
+부터 해더 
+
+
+
+강의 후기  
+좋아요 표시 
+방문자수? 
+
+로그인 한 사람의 정보를 가져오는 것 
+
+
+영상부분 
+
+nav =
+
+
+터키 기능
+1. 로그인, 아웃 (재혁님)
+2. 회원가입, 탈퇴? (종호님)
+3.게시판 (은선님) (동찬님)
+3-1 게시물 등록버튼 (은선님, 동찬님)
+4. 후원상황 모달창 (대철님)
+5. main 페이지 / nav바 / 푸터 (동찬님)
+
+
+필요한 db
+
+회원가입시
+1. num
+2. userName
+3. userId
+4. userPw
+로그인
+1. userId
+2. userPw
+게시판
+1. postName
+2. postContent
+후원금액
+1. supportAmount
+flask pymongo dnspython bs4 
+\
+
+
+
+from pymongo import MongoClient
+import certifi
+
+ca = certifi.where()
+
+client = MongoClient('mongodb+srv://test:sparta@cluster0.fl8pcqp.mongodb.net/?retryWrites=true&w=majority',
+tlsCAFile=ca)
+db = client.dbsparta

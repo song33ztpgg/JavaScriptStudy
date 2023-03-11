@@ -1,0 +1,21 @@
+express flow 훑어보기 
+웹서버 http워크 
+
+라우터 약속된 장소에 가면 실행되는 곳 
+
+
+dev 임시 
+
+npm i nodemon 
+
+버퍼식은 파싱통해 해석을 한다 제이슨으로 바꾼다 
+1개의 리스폰스는 1개의 리퀘스트가 나와야 한다 
+
+
+cannot set headers after they are sent to the client 
+:클라이언트 보냈는데 또 왜보내냐 (2개의 리퀘스트가 나왔다) 
+
+send 보내는 방식 : 그냥 문자로 보낸다 
+json : 제이슨 형식으로 보낸다 
+return 완벽히 자료를 보내고종료 
+next : 현재 값 보내고 다음 명령어를 실행한다, 미들웨어가 있을때 중간 명령어를 실행뒤 

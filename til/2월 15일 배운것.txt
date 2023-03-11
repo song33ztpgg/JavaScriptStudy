@@ -1,0 +1,29 @@
+초기화 하지 않으면 null값이 저장 되었다 
+
+
+문자열.substr(시작위치, 자를 크기(음수로 하면 뒤에서부터))
+
+바꿀 문자열
+배열.splice(기준index,delete,삽입할 값)
+
+includes (배열에 있는지 없는지 확인하는 문자)
+
+
+반복문
+in 
+of =>  doc = {
+	key, value
+}
+
+=========================
+이건 왜 0이 아니라  null값이 나오는건지
+function solution(numbers) {
+    var answer  = 0;
+    
+    for(let i = 0; i < 9; i++) {
+        if(i != numbers[i]){
+            answer += numbers[i];    
+        }
+    }
+    return answer;
+}

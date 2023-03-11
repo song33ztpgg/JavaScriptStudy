@@ -1,0 +1,45 @@
+includes => 값.includes("확인하고 싶은 값") => 참이면 true
+append 를 자꾸 까먹는다 붙이고 싶은 id  $().append(붙일 값) 
+붙을 값을 만들기 위해서는 여러 변수를 넣을 경우 ${이름} 형식으로 붙인다 
+
+def 함수 
+
+파이선 파일에서  url을 가지고 그 값에서 원하는 값을 추출 하는 방법을 모르겠다 
+url1 > url2 > url3 에서 select를 통해  url1 > url2  값을 가져왔고 거기서 url3에서 원하는 값을 얻고 싶은데 안된다 
+
+sele 
+
+<img alt="49" height="13" src="https://ssl.pstatic.net/imgmovie/2007/img/common/bullet_r_g49.gif" width="14"/>
+<img alt="50" height="13" src="https://ssl.pstatic.net/imgmovie/2007/img/common/bullet_r_g50.gif" width="14"/> 
+[alt]
+
+<td class="point">9.37</td>
+<td class="point">9.37</td> 
+<a href="/movie/bi/mi/basic.naver?code=14450" title="쉰들러 리스트">쉰들러 리스트</a>
+<a href="/movie/bi/mi/basic.naver?code=161850" title="아이 캔 스피크">아이 캔 스피
+.text 
+
+
+db.이름.find_one({'조건' : 이름}, {'추출하고 싶은 조건 })  
+
+user = db.test.find_one({'name':'가버나움'},{'star'})
+print(user)
+user = db.test.find_one({'name':'가버나움'},['star'])['star'] 
+print(user)
+print(user['star']) 
+뭐가 다른지
+ 
+{'_id': ObjectId('63e3685dd19c70eb29de57cf'), 'star': '9.59'}
+{'_id': ObjectId('63e3685dd19c70eb29de57cf'), 'star': '9.59'}
+9.59
+
+
+
+insert_one 
+insert 
+
+
+
+
+static = css 이미지 
+templates = html 파일

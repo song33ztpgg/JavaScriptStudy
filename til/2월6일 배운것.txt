@@ -1,0 +1,16 @@
+
+
+
+
+자바스크립트 - 자바는 오류발생하기전 움직임, 
+
+
+ㄴ 	<!-- HTML에 이 부분을 추가하고 -->
+	<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+
+ border: 2px solid white; 명령어를 통해  글자주변 두깨를 변화 하여서 
+solid 명령어만 사용해도 될줄 알고 사용 하였으나 전여 변화가 안나타 났다.
+
+태두리 색을 바꾸려고 border를 사용했으나 변하지 않았고 태두리 색을 변하게 하려면 solid-color 명령어를 사용해야 했다
+
+
