@@ -2,19 +2,9 @@ const socketIo = require("socket.io");
 const http = require("./app.js");
 const io = socketIo(http);
 
-
-
-io.on("connection", (sock) => {
-  const { watchChangePage, watchBuying, watchByeBye } = initSocket(sock);
-
-  watchChangePage();
-
-  watchBuying();
-
-  watchByeBye();
-});
-
 const socketIdMap = {};
+
+
 function initSocket(sock) {
     socketIdMap[sock.id] = null;
     console.log("새로운 소켓이 연결됐어요!");
@@ -86,4 +76,12 @@ function initSocket(sock) {
   }
   
   
+  io.on("connection", (sock) => {
+    const { watchChangePage, watchBuying, watchByeBye } = initSocket(sock);
   
+    watchChangePage();
+  
+    watchBuying();
+  
+    watchByeBye();
+  });
