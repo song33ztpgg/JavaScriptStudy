@@ -11,7 +11,7 @@ module.exports = async (req, res, next) => {
     }
 
                             // token :${token}
-    const decodedToken = jwt.verify(token, "customized_secret_key");
+    const decodedToken = jwt.verify(token, "secret_key");
       
     
     /*jwt 생성

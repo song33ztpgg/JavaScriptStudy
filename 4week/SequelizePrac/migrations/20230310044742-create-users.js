@@ -9,7 +9,7 @@ module.exports = {
         primaryKey: true, // Primary Key (기본키)
         type: Sequelize.INTEGER
       },
-      email: {
+      nickname: {
         allowNull: false, 
         type: Sequelize.STRING,
         unique: true
@@ -32,4 +32,5 @@ module.exports = {
   },
   async down(queryInterface, Sequelize) {
     await queryInterface.dropTable('Users');  
+  }
 };

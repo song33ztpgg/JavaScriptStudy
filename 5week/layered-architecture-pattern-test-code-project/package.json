@@ -1,0 +1,38 @@
+{
+  "name": "layered-architecture-pattern-test-code-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "prettify": "prettier --write src/*.js src/**/*.js src/**/**/*.js test/**/*.js test/**/**/*.js",
+    "dev": "nodemon src/app.js",
+    "test:init": "NODE_ENV=test sequelize db:create --config=./src/config/config.json && NODE_ENV=test sequelize db:migrate --config=./src/config/config.json --migrations-path=./src/migrations",
+    "window:test:init": "set NODE_ENV=test sequelize db:create --config=./src/config/config.json && set NODE_ENV=test sequelize db:migrate --config=./src/config/config.json --migrations-path=./src/migrations",
+    "test": "NODE_ENV=test jest --forceExit",
+    "test:silent": "NODE_ENV=test jest --silent --forceExit",
+    "test:coverage": "NODE_ENV=test jest --coverage --forceExit",
+    "test:unit": "NODE_ENV=test jest test/unit --forceExit",
+    "test:integration": "NODE_ENV=test jest test/integration --forceExit",
+    "window:test": "set NODE_ENV=test && jest --forceExit",
+    "window:test:silent": "set NODE_ENV=test && jest --silent --forceExit",
+    "window:test:coverage": "set NODE_ENV=test && jest --coverage --forceExit",
+    "window:test:unit": "set NODE_ENV=test && jest test/unit --forceExit",
+    "window:test:integration": "set NODE_ENV=test && jest test/integration --forceExit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.24.0",
+    "sequelize-cli": "^6.5.1"
+  },
+  "devDependencies": {
+    "jest": "^29.2.0",
+    "joi": "^17.6.3",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.7.1",
+    "supertest": "^6.3.0"
+  }
+}
